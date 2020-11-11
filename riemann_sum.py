@@ -11,7 +11,7 @@ def function(x):
     return 10 - x**2
 
 
-if input == "":
+if divisions == "":
 
     divisions = 1
     breaknext = False
@@ -35,7 +35,6 @@ if input == "":
         divisions = divisions * 2
         if divisions >= 100000:
             breaknext = True
-            
 else:
     divisions = int(divisions)
     division_size = (upper_bound - lower_bound) / divisions
